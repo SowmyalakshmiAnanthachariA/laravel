@@ -36,4 +36,11 @@ class LoginController extends Controller
     {
         $this->middleware('guest', ['except' => 'logout']);
     }
+    public function index(){
+    	return 'hello world!';
+    }
+    public function contact(){
+    	return 'Contact Me';
+    }
+    
 }
